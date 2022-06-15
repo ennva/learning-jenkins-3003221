@@ -16,3 +16,8 @@ You may need to have Administrative permission on the target system.
 - Use notepad or another text editor to open the file
 - Copy the initial admin password from the file
 - Back in the browser window, paste in the password and proceed with the setup
+
+## Instalation on docker
+- Navigate to [https://hub.docker.com/_/jenkins]
+- run `docker pull jenkins/jenkins`
+- run `docker run --name=jenkins-master -p 8080:8080 -p 50000:50000 -v ${PWD}:/var/jenkins_home jenkins/jenkins:latest`
